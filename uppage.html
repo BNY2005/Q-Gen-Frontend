@@ -184,7 +184,7 @@
     const formData = new FormData();
     formData.append('pdfUpload', document.querySelector('input[name="pdfUpload"]').files[0]);
     try {
-      const response = await fetch('http://localhost:3000/extract-pdf-text', {
+      const response = await fetch('https://q-gen-backend.onrender.com/extract-pdf-text', {
         method: 'POST',
         body: formData
       });
